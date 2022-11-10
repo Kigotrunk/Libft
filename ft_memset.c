@@ -1,9 +1,9 @@
-void *memset (void *dest, int d, size_t n)
+void *memset (void *dest, int d, size_t len)
 {
   unsigned char *ptr;
 
-  ptr = dest;
+  *ptr = dest;
   while (len-- > 0)
-    *ptr++ = n;
+    *ptr++ = val;
   return dest;
 }
